@@ -86,56 +86,62 @@ int main(int argc, char *argv[])
             cout << "select timeout \n";
             break;
         }
-        //有新的连接
-        if(FD_ISSET(listenfd, &fd_read))
+        for(int i = 0; i < ret; ++i)
         {
-            std::cout <<"有新的连接到来\n";
-            connfd = accept(listenfd, (sockaddr*)&cli_addr, &cli_len);
-            setnonblock(connfd);
-            //加入到已连接事件集中
-            if(count < max_con)
+            //有新的连接
+            if(FD_ISSET(listenfd, &fd_read))
             {
-                sel_fd[count] = connfd;
-                ++count; 
-                if(connfd > max_fd)
-                    max_fd = connfd;
-            }
-            else
-            {
-                char *str = "max connection, sorry";
-                send(connfd, str, strlen(str) + 1, 0);
-                close(connfd);
-            }
-        }
-        for(int i = 0; i < count; ++i)
-        {
-            if(FD_ISSET(sel_fd[i], &fd_read))
-            {
-                ret = recv(sel_fd[i], readbuf, 1023, 0);
-                if(ret < 0)
+                std::cout <<"有新的连接到来\n";
+                connfd = accept(listenfd, (sockaddr*)&cli_addr, &cli_len);
+                setnonblock(connfd);
+                //加入到已连接事件集中
+                if(count < max_con)
                 {
-                    std::cout << "recv failed\n";
+                    sel_fd[count] = connfd;
+                    ++count; 
+                    if(connfd > max_fd)
+                        max_fd = connfd;
                 }
-                //有连接断开
-                if(ret == 0)
-                {
-                    FD_CLR(sel_fd[i], &fd_read);
-                    close(sel_fd[i]);
-                    sel_fd[i] = -1;
-                }   
                 else
                 {
-                    printf("recv %d's data : %s", sel_fd[i], readbuf);
+                    char *str = "max connection, sorry";
+                    send(connfd, str, strlen(str) + 1, 0);
+                    close(connfd);
                 }
-                memset(readbuf, 0, sizeof(readbuf));
+            }   
+            for(int i = 0; i < count; ++i)
+            {
+                if(FD_ISSET(sel_fd[i], &fd_read))
+                {
+                    ret = recv(sel_fd[i], readbuf, 1023, 0);
+                    if(ret < 0)
+                    {
+                        std::cout << "recv failed\n";
+                    }
+                    //有连接断开
+                    if(ret == 0)
+                    {
+                        std::cout << "用户"  << sel_fd[i] << "断开连接\n";
+                        FD_CLR(sel_fd[i], &fd_read);
+                        close(sel_fd[i]);
+                        sel_fd[i] = -1;
+                    }   
+                    else
+                    {
+                        printf("recv %d's data : %s", sel_fd[i], readbuf);
+                    }
+                    memset(readbuf, 0, sizeof(readbuf));
+                }
             }
+            //每次select轮询都得更新fd_set
+            FD_ZERO(&fd_read);
+            FD_SET(listenfd, &fd_read);
+            for(int i = 0; i < count; ++i)
+            {
+                FD_SET(sel_fd[i], &fd_read);
+            }
+            sel_time.tv_sec = 5; //因为每次select返回，如果不更新定时时间，则每次都是之前的tv_sec减去等待的时间。
         }
-        FD_SET(listenfd, &fd_read);
-        for(int i = 0; i < count; ++i)
-        {
-            FD_SET(sel_fd[i], &fd_read);
-        }
-        sel_time.tv_sec = 5;
     }
     close(listenfd);
 }
