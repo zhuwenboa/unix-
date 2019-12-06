@@ -1,0 +1,104 @@
+body{margin: 0px;padding: 0px;font-size: 20px;font-family: "微软雅黑","宋体";text-align: center;width: 100%;}
+
+/*公共样式设定  标签选择器*/
+img{border: 0px;}
+a{text-decoration: none;color:#FFFFFF}
+a:hover{color: #188EEE;}
+
+
+/*顶部导航固定*/
+#header{  width: 100%;position: fixed;top: 0px;z-index: 50; }
+
+/*顶部导航栏内容*/
+.centerdiv{width: 1890px;height: 100%;text-align: left;float: left;padding-left: 30px;border-bottom: 1px;background-color:#707070}
+.logo{overflow:hidden;width:250px ;float: left;}
+#navList{width: 900px;float:left;padding-top: 28px;}
+#navList ul{margin: 0px;padding: 0px;font-size: 20px;float: left;}
+#navList li{list-style: none;float: left;}
+#navList a{padding: 13px 40px;font-size: 22px;}
+#div1{width: 200px;height: 100px;background-color: #FF1493;display: none;}
+
+.reg{width:50px ;float: left ;margin: 28px 18px 0px 350px;}
+.login{width: 50px;float: left;margin: 28px 18px;}
+
+/*故宫概述*/
+.container{width:100%;float: left;}
+.bg1{background-color:white;}
+.listCenterdiv{width: 1898px;height: 555px;float: left;background-color: #d1d1e0;color: white;margin-top: 82px;}
+.courseImgdiv{width:798px;height: 555px;float: left;}
+.bg2{background:url(../img/QQ图片20191114194817.png);}
+.courseCharacters{width:1100px;float: left;height: 555px;}
+.courseTitle{width:1100px ;float: left;font-size:32px;margin-top: 30px;}
+.courseDesc{width: 1000px;font-size: 26px;padding: 80px 0px 0px 60px;text-indent: 2em;text-align:justify;text-justify:distribute-all-lines;line-height: 35px;}
+.courseDesc p{margin-top: 10px;}
+
+/*主题介绍*/
+.bg3{background-color:white;overflow: hidden;padding-bottom: 20px;}
+.DetailCenterdiv{width:1700px;margin: 20px 95px;background-color: purple;text-align: left;}
+
+.leftdiv{width:1030px ;float: left;}
+.leftitem{width: 1020px;float: left;background: url(../img/home_block1_news_bg.jpg);margin-bottom: 20px;height: 465px;}
+.leftDesc1{width: 520px;height: 465px;float: left;}
+.leftImg{width: 500px;height: 465ppx;float: left;}
+.lefttitle{width:520px;height: 100px;overflow: hidden;color:#fff;float:left;margin-top: 20px;}
+.lefttitle h1{color: inherit;float: left;display: inline-block;}
+.titImg{margin-left: 30px;float: left;margin-bottom: 50px;}
+.s1{width: 85px;height: 70px;margin-left: 60px;margin-bottom: 20px;float: left;margin-right: 40px;}
+.leftNews{width: 520px;height:345px ;float: left;color: #FFFFFF;}
+
+.news1{width:500px ;height: 137.5px;padding: 10px;overflow: hidden;}
+.border1{border-bottom: 5px inset gainsboro  ;}
+.news1 a{target:blank;font-size: 20px;color: #FFFFFF;display:block;height:26px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;margin-bottom: 30px;margin-top: 20px;}
+.leftNews a{text-decoration: none;color:#FFFFFF}
+.leftNews a:hover{color: #188EEE;}
+.scroll-list{width:490px;height: 175px;margin: 0px auto;}
+.scroll-list ul{margin: 0;padding: 0;list-style: none;}
+.scroll-list a{font-size: 20px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color: #fff;display: block;padding-top: 0;}
+.scroll-list li{margin-top: 20px;}
+/*下半部分*/
+.leftDesc2{width: 740px;height: 465px;float: left;}
+.leftDesc3{width:280px;height: 465px;float: left;}
+.leftDesc3 img{width:280px;height: 465px;float: left;}
+
+
+.Desc2Title{width:520px;height: 100px;overflow: hidden;color:#fff;float:left;margin-top: 20px;}
+.Desc2Title h1{color: inherit;float: left;display: inline-block;}
+.timeList{width:720px;height: 150px;margin-left: 30px;float: left;}
+.timeList ul{margin: 0;padding: 0;overflow: hidden;}
+.timeList li{float: left;color: #fff;list-style: none}
+.timeList h1{margin-bottom: 10px;margin-right: 90px;background: url(../img/huiwen1.png)right no-repeat;font-family: Impact, Arial;color: inherit;
+font-weight: normal;color: #FFFFFF;line-height: 1.2;padding-right: 60px; }
+.tip{width:720px;height: 80px;margin-top: 40px;float: left;}
+.tip p{line-height: 24px;margin-top: 0px;padding: 0;color: #FFFFFF;}
+.tip span{margin-right: 15px;}
+.tip i{margin-left: 30px;padding-right: 20px;display: inline-block;background: url(../image/wxx_shuxina.png) right center no-repeat;}
+
+.rightdiv{width:650px ;float: left;}
+.rightitem{width: 650px;float: left;background: url(../img/home_block1_news_bg.jpg);margin: 0px 0px 21px 30px;height: 465px;}
+.rightTitle{width:650px ;height: 100px;}
+.rightTitle h1{color: inherit;display: inline-block;margin-left: 60px;color: #FFFFFF;}
+.rightImg{width:650px ;height: 365px;float: left; }
+.rightDesc2{width:650px ;}
+/*选项卡*/
+ nav li{display: inline;width: 24%;text-decoration: none;padding: 20px 35px;margin-left: 26px;font-size: 32px;color: #FFFFFF;}
+li:hover{background-color: lightblue;}
+#xuanxiangka div{ height: 385px;}
+.tab{padding:0px 10px;color: #FFFFFF;font-size: 20px;text-indent: 2em;text-align: justify;text-justify:inter-ideograph;line-height: 30px;}
+
+/*foot*/
+#footer-div{clear:both;width: 1898px;height:330px;background-color: #1F2021;text-align: center;}
+#footer{width:1620px ;height: 330px;margin: 0px auto;text-align: left;}
+.foot-item{width:200px ;float: left;height: 220px;padding-top: 40px;}
+.foot-item ul{margin: 0px;padding: 0px;float: left;}
+.foot-item li{list-style: none;padding-top: 15px;font-size: 18px;}
+.foot-item-title{width: 200px;float: left;font-size: 23px;color: #FFFFFF;}
+#footer a{color: #BFBFBF;}
+#footer a:hover{color: #FFFF;}
+
+.foot-partners{width:750px ;height: 150px;float: left;padding-top: 40px;}
+.alterTitle{width:750px ;}
+.foot-partners ul{margin: 0px;padding: 0px;float: left;}
+.foot-partners li{list-style: none;float: left;padding-top: 15px;padding-right: 60px;}
+
+.company-declare{width: 1600px;float: left;color: #BFBFBF;font-size: 18px;padding-bottom: 30px;}
+.company-declare span{color: #FFF;font-size: 20px;}

@@ -1,0 +1,77 @@
+body{margin: 0px;padding: 0px;font-size: 20px;font-family: "微软雅黑","宋体";text-align: center;width: 100%;color: #FFF;}
+
+/*公共样式设定  标签选择器*/
+img{border: 0px;}
+a{text-decoration: none;color:#474747;}
+a:hover{color: #188EEE;}
+input{margin-top: 5px;margin-left: 15px;}
+
+/*顶部导航固定*/
+#header1{width: 100%;position: fixed;top: 0px;z-index: 50;border-bottom: 1px solid #E6E7E8;background-color: #FFFFFF }
+/*顶部导航栏内容*/
+.toprongqi{width: 1600px;margin: 0px auto;height: 53px;}
+.toptupian{width:300px ;float: left;height: 53px;text-align: left;}
+.topneirong{width: 1000px;float:left;height: 53px;}
+.topneirong ul{margin: 0px;padding: 0px;font-size: 20px;float: left;}
+.topneirong li{list-style: none;float: left;margin-top: 10px;color:black;}
+.topneirong a{padding: 20px 60px;font-size: 20px;}
+.yincang{width:200px ;height: 53px;float: left;text-align: left;}
+/*更多下拉*/
+#more{width: 60px;height: 80px;display: none;border: 1px solid #000000;}
+#more ul{margin: 0px;padding: 0px;font-size: 20px;float: left;}
+#more li{list-style: none;margin: 10px 0px 0px 8px;}
+
+/*主体新闻内容*/
+.container{width:100%;height: 100%;overflow: hidden;}
+.smallTitle{width:1898px;height: 100%;color: #707070;line-height: 50px;margin-top: 53px;}
+.wrap{width: 1620px;height: 150px;margin: 0px auto;text-align:left;padding-top: 20px;}
+.wrap a{margin: 0 10px;text-decoration: none;color: inherit;}
+.detail1{width: 100%;padding: 5px 0 48px;}
+.detail2{background: #FCFCFC;padding-bottom: 50px;width: 100%;}
+.wrap1{width: 1600px;height: 100%;margin: 0 auto;position: relative;color: #707070;}
+.wrap1 h1{font-size: 32px;text-align: center;}
+.wrap2{width: 1600px;height: 800px;margin: 0 auto;}
+.title2{color: #474747;line-height: 1.2;}
+.title3{text-align: center;font-size: 36px;color: #474747;line-height: 1.2;margin-top: 30px;}
+.inf{text-align: center;margin-top: 15px;}
+.inf span{color: #707070;}
+.article{padding: 0 65px;font-size: 16px;line-height: 26px;margin-top: 40px;width: 1470px;height: 100%;float: left;}
+.content{padding: 0px;margin: 0px;font-size: 22px;line-height: 34px;}
+.content p{text-align: justify;text-justify:inter-ideograph;text-indent: 2em;}
+.height1{height: 500px;}
+.tit-span{display: inline-block;vertical-align: middle;margin: 0 10px;line-height: 1;padding: 20px 0px;background: none;position: relative;}
+.text{width: 1600px;height: 600px;background: url(../img/hd1img4.png)no-repeat center;background-size:1400px 600px;}
+.padding{padding: 50px 230px;font-size: 27px;}
+.eduitem{padding-right: 180px;}
+.eduitem p{padding: 8px 0;line-height: 33px;text-indent: 2em;text-align: justify;text-justify:inter-ideograph;}
+#reduce{height: 100px;}
+#reduce1{height: 70px;}
+.pic{width: 100%;height: 700px;text-align: center;}
+.explore{width: 1600px;height: 100px;margin: 0px auto;}
+.title4{text-align: center;font-size: 46px;color: #474747;line-height: 1.2;background-color: #707070;display: flex;flex-direction: row;}
+#bg4{background: url(../img/bg4.png);}
+.explore{width: 1600px;height:520px;float: left;background: url(../img/s579d656868e26.png);}
+.pic img{position: absolute;right: 150px;bottom: 150px;-moz-transform: translateY(0);}
+.exitem{position: absolute;left: 230px;top: 325px;width: 1190px;height: 230px;text-align: left;}
+.exitem span{color: #FFFFFF;font-size: 30px;}
+.exitem p{font-size: 23px;text-indent: 2em;}
+.listName{width: 700px;height: 160px;margin-top: 45px;position: absolute;left: 230px;top: 530px;}
+
+/*foot*/
+#footer-div{clear:both;width: 100%;height:300px;background-color: #1F2021;text-align: center;}
+#footer-div1{clear:both;width: 100%;height:300px;background-color: #1F2021;text-align: center;position:fixed; bottom:0; }
+#footer{width:1620px ;height: 300px;margin: 0px auto;text-align: left;}
+.foot-item{width:200px ;float: left;height: 200px;padding-top: 40px;}
+.foot-item ul{margin: 0px;padding: 0px;float: left;}
+.foot-item li{list-style: none;padding-top: 15px;font-size: 18px;}
+.foot-item-title{width: 200px;float: left;font-size: 23px;color: #FFFFFF;}
+#footer a{color: #BFBFBF;}
+#footer a:hover{color: #FFFF;}
+
+.foot-partners{width:750px ;height: 120px;float: left;padding-top: 40px;}
+.alterTitle{width:750px ;}
+.foot-partners ul{margin: 0px;padding: 0px;float: left;}
+.foot-partners li{list-style: none;float: left;padding-top: 15px;padding-right: 60px;}
+
+.company-declare{width: 1600px;float: left;color: #BFBFBF;font-size: 18px;padding-bottom: 30px;}
+.company-declare span{color: #FFF;font-size: 20px;}

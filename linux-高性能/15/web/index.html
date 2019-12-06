@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>欢迎访问故宫博物院</title>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<script type="text/javascript">
+			window.onload=function () {
+			var nav=document.getElementById('nav');
+			var oNav=nav.getElementsByTagName('li');
+		
+			var container=document.getElementById('xuanxiangka');
+			var oDiv=container.getElementsByClassName('tab');
+			for(var i=0;i<oNav.length;i++){
+				oNav[i].index=i;
+				oNav[i].onclick=function () {
+			for(var i=0;i<oNav.length;i++){
+				oDiv[i].style.display="none";
+				}
+				oDiv[this.index].style.display="block"
+			}
+			for(var m=1;m<oNav.length;m++){
+				oDiv[m].style.display="none";
+					}
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="centerdiv style="width: 1920px">
+				<div class="logo">
+					<a href="#"><img src="img/toplogo.png" ></a>
+				</div>
+				<div id="navList">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="js/education.html">历史教育</a></li>
+						<li><a href="js/Treasure.html">故宫展览</a></li>
+						<li><a href="js/explore.html">故宫探索</a></li>
+					</ul>
+                </div>	
+				<div class="reg"><a href="#">注册</a></div>
+				<div class="login"><a href="#">登录</a></div>
+				<div class="login"><a href="#">关于</a></div>
+			</div>
+		</div>
+		<div class="container bg1  " >
+				<div class="listCenterdiv bg2">
+					<div class="courseImgdiv"><img src="img/QQ图片20191104202650.png" ></div>
+					<div class="courseCharacters">
+						<div class="courseTitle">故宫博物院简介</div>
+						<div class="courseDesc ">
+								     <p>北京故宫是中国明清两代的皇家宫殿旧称,
+									 紫禁城位于北京中轴线的中心,是中国古代宫廷建筑之精华。
+									 北京故宫以三大殿为中心，占地面积72万平方米，建筑面积约15万平方米，
+									 有大小宫殿七十多座，房屋九千余间。是世界上现存规模最大、保存最为完整的木质结构古建筑之一
+									 。北京故宫于明成祖永乐四年开始以南京故宫为蓝本营建，到永乐十八年建成。它是一座长方形城池，
+									 南北长961米，东西宽753米，四面围有高10米的城墙，城外有宽52米的护城河。</p>  
+									 <p>北京故宫被誉为世界五大宫之首（法国凡尔赛宫、英国白金汉宫、美国白宫、俄罗斯克里姆林宫）,是国家AAAAA级旅游景区,1961年被列为第一批全国重点文物保护单位;1987年被列为世界文化遗产。</p>
+						
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="container bg3">
+			<div class="DetailCenterdiv">
+				<div class="leftdiv">
+					<div class="leftitem">
+						<div class="leftDesc1">
+							<div class="lefttitle">
+								<h1>
+									<span class="titImg">
+										<img src="img/public-icon1.png">
+									</span>
+									<span class="s1">故宫</span>
+									<span class="s1">资讯</span>	
+									<span >
+										<img src="img/public-icon2.png">
+									</span>
+								</h1>	
+							</div>
+							<div class="leftNews">
+								<div class="news1 border1">
+									<a  href="js/hrefitem1.html" >【声明】关于故宫博物院在职、离退休人员参加社会文物鉴定等公务性活动的声明</a>
+									<a  href="js/hrefitem2.html" >【严正声明】关于我院依法对“故宫博物院”享有名称权和对已注册商标的商标专用权的严正声明</a>
+								</div>
+								<div class="scroll-list"  >
+									<ul>
+										<li>
+											<a href="js/hrefitem1.html" title="深层次挖掘故宫之美 《上新了·故宫》第二季全面“上新”" target="_blank">
+												（1）深层次挖掘故宫之美 《上新了·故宫》第二季全面“上新”
+											</a>
+										</li>
+										<li>
+											<a href="js/hrefitem4.html" title="第三届“文明古国论坛部长级会议学者论坛”在故宫博物院召开" target="_blank">
+												（2）第三届“文明古国论坛部长级会议学者论坛”在故宫博物院召开
+											</a>
+										</li>
+										<li>
+											<a href="js/hrefitem5.html" title="故宫博物院与北京大学、敦煌研究院签署战略合作协议" target="_blank">
+												（3）故宫博物院与北京大学、敦煌研究院签署战略合作协议
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div></div>
+						</div>
+						<div class="leftImg"><img src="img/leftimg.jpg" width=499px;hight=378px;></div>
+					</div>
+					<div class="leftitem">
+						<div class="leftDesc2">
+							<div class="Desc2Title">
+								<h1>
+									<span class="titImg">
+										<img src="img/public-icon1.png">
+									</span>
+									<span class="s1">票务</span>
+									<span class="s1">时间</span>	
+									<span >
+										<img src="img/public-icon2.png">
+									</span>
+								</h1>	
+							</div>
+							<div class="timeList">
+								<ul>
+									<li >
+										<h1>08:30</h1>
+										<p>开始售票<br>开放进馆时间</p>
+									</li>
+									<li>
+										<h1>15:30</h1>
+										<p>止票时间<br>(含钟表馆、珍宝馆)</p>
+									</li>
+									<li>
+										<h1>16:30</h1>
+										<p>闭馆时间</p>
+									</li>
+								</ul>
+							</div>
+							<div class="tip">
+								<p>
+									<span>
+										<i>淡季门票
+										每张门票为人民币40元（不包括珍宝馆、钟表馆）</i>
+									</span>
+								</p>
+								<p>
+									<span>
+										<i>旺季门票
+										每张门票为人民币10元
+										</i>
+									</span>
+								</p>
+								<p>
+									<span>
+										<i>钟表馆门票
+										每张门票为人民币10元
+										</i>
+									</span>
+								</p>
+							</div>
+						</div>
+						<div class="leftDesc3">
+								<img src="img/weixin.png">
+						</div>
+					</div>
+				</div>
+				<div class="rightdiv">
+					<div class="rightitem">
+						<div class="rightTitle">
+							<h1>
+								<span class="titImg">
+									<img src="img/public-icon1.png">
+								</span>
+								<span class="s1">故宫</span>
+								<span class="s1">全景</span>	
+								<span >
+									<img src="img/public-icon2.png">
+								</span>
+							</h1>	
+						</div>	
+						<div class="rightImg">
+							<img src="img/quanjing.png">
+						</div>
+					</div>
+					<div class="rightitem">
+								<nav id="nav">
+								 <ul>
+								 <li><b>1.建成</b></li>
+								 <li><b>2.意义</b></li>
+								 <li><b>3.藏宝</b></li>
+								 </ul>
+								</nav>
+						<div id="xuanxiangka">		
+								<div class="tab" ><p>北京故宫由明成祖朱棣于永乐四年(公元1406年)开始建设，到明代永乐十八年(公元1420年)建成，占地面积约为72万平方米，建筑面积约 为15万平方米，宫殿建筑均是木结构、黄琉璃瓦顶、青白石底座。故故宫有4个门，正门名午门，东门名东华门，西门名西华门，北门名神武门。面对北门神武门，有用土、石筑成的景山，满山松柏成林。在整体布局上，景山可说是故宫建筑群 的屏障。故宫被誉为世界五大宫之首。</p>
+												<p>故宫建成后，经历了明、清两个王朝，到1912年清帝逊位的约五百年间，历经了明、清两个朝代二十五位有或曾有庙号谥号的皇帝。是明清两朝最高统治核心的代名词。在1987年，北京故宫就被列入了世界文化的遗产，而对北京故宫，拥有者9000个房间的建筑物，也成为了中国明清时代的一个无价的历史证明</p>
+								</div>
+								<div class="tab" ><p>故宫博物院是世界上极少数同时具备艺术博物馆、建筑博物馆、历史博物馆、宫廷文化博物馆等特色并且符合国际公认的“原址保护”“原状陈列”基本原则的博物馆和文化遗产，在弘扬中华文明上起着不可替代的作用。重点介绍了在抗日战争期间，大量文物南迁，我国人民为保护“国宝”，保护国家传统文化所付出的艰辛及做出重大贡献的史实</p>
+												<p>两个故宫博物院同根同源，都珍藏着大量代表中华古代文化的奇珍异宝，都在弘扬着源远流长的中华文化。说故宫学是两岸故宫博物院长期交往的内在动力。说故宫收藏显示了中华民族五千年的文明是一条绵延不断的历史长河。中华民族绵延不断的历史文化在故宫的各类文物藏品里均得到充分的印证</p> </div>
+								<div class="tab" ><p>故宫一共有1807,558件套文物。珍贵文物占93.2%、一般文物占6.4%、资料只占0.4%，几乎件件都是珍贵文物。故宫今天这些文物被分了25个大类、200多个类别。</p>
+												<p>比如绘画，大家看到的《千里江山图》《五牛图》还有《韩熙载夜宴图》《清明上河图》这些都是重要的绘画，一共53,000件。书法，像《兰亭序》、《中秋帖》、《伯远帖》这样的重要藏品一共有75,000件。故宫博物院是收藏铜器世界上最多的博物馆，一共16万件，其中特别珍贵的有1,670件带先秦铭文的青铜器。如，毛公鼎、散氏盘、宗周钟。还有11,000件金银器、19,000件漆器、6,600件珐琅器，这些都是传世的艺术品。</p></div>
+						</div>		
+					</div>	
+				</div>
+			</div>			
+		</div>
+		<div id="footer-div">
+			<div id="footer">
+				<div class="foot-item">
+					<div class="foot-item-title">关于故宫</div>
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">加入我们</a></li>
+					</ul>
+				</div>
+				<div class="foot-item">
+					<div class="foot-item-title">帮助中心</div>
+					<ul>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</div>
+				<div class="foot-partners">
+					<div class="foot-item-title  alterTitle">更多功能</div>
+					<ul>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">相关链接</a></li>
+						<li><a href="#">映像授权</a></li>
+						<li><a href="#">历史讲解</a></li>
+					</ul>
+				</div>
+				<div class="company-declare">
+					<span>个人声明：</span>本网站由网络1701徐伟泽制作,素材故宫博物院官网提供&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2001- 现在 故宫博物院 
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
