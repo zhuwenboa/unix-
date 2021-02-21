@@ -34,8 +34,10 @@ Mmap::Mmap(const char* file)
         std::cout << "opne file failed\n";
     }
     char temp_mes[1024] = {0};
-    write(fd, temp_mes, 1024);
-    share_mem = (char*)mmap(NULL, 1024, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+    //write(fd, temp_mes, 1024);
+    ftruncate(fd, 1024);
+    share_mem = (char*)mmap(NULL, 1024, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
+    //fsync(fd);
 }
 
 Mmap::~Mmap()
@@ -59,7 +61,8 @@ bool Mmap::read(int size)
     if(size > 5 * 1024)
         return false;
     char read_content[1024] = {0};
-    strncpy(read_content, share_mem, size);
+    //strncpy(read_content, share_mem, size);
+    ::read(fd, read_content, 1024);
     std::cout << read_content << "\n";
     return true;
 }
@@ -69,6 +72,5 @@ int main()
     Mmap test("1.txt");
     char* mes = "zhuwenbo";
     test.wirte(mes);
-    //test.wirte("zhuwenbo\0");
     test.read(1000);
 }
